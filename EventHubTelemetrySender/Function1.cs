@@ -12,8 +12,8 @@ namespace EventHubTelemetrySender
 {
     public static class Function1
     {
-        private const string connectionString = "Endpoint=sb://hgeventhub01.servicebus.windows.net/;SharedAccessKeyName=Sender;SharedAccessKey=djbJGSwMnorfMy8QVMZdf5TghXLJnYpMVNlW7CNOBQ4=;EntityPath=hgeventhub01ns1";
-        private const string eventHubName = "hgeventhub01ns1";
+        private const string connectionString = "<EVENT HUBS NAMESPACE - CONNECTION STRING>";
+        private const string eventHubName = "<EVENT HUB NAME>";
 
         [FunctionName("Function1")]
         public static async Task Run([TimerTrigger("0 */1 * * * *")]TimerInfo myTimer, ILogger log)
